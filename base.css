@@ -1,0 +1,160 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: darkslategray;
+    color: #ffffff;
+    max-height: 100vh
+}
+
+.header::before {
+    content: "";
+    background-image: url("./src/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 290px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+.menu {
+    width: 15%;
+    padding: 10px 20px 0px;
+    border-right: solid;
+    border-width: 0.2px;
+}
+
+.header {
+    min-height: 100px;
+    display: flex;
+
+}
+
+.header img {
+    height: 100px;
+}
+
+.header .titulo {
+    justify-content: center;
+    margin-left: 70px;
+    flex-direction: column;
+}
+
+.header .titulo h1 {
+    border-bottom: solid;
+    border-color: lightcoral;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header .titulo h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.content {
+    text-size-adjust: auto;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.content a {
+    color: orangered;
+}
+
+.content form label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+}
+
+.content table {
+    border: solid 1px rgba(255, 121, 121, 0.192);
+    box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content table tr:nth-child(even) {
+    background-color: rgba(255, 121, 121, 0.192);
+}
+
+.content table thead th {
+    background-color: azure;
+    color: black;
+}
+
+.footer {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    border-top: solid;
+}
+
+.footer .container {
+    margin-inline: 40px;
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.formulario {
+    margin: 5px;
+}
+
+.menu ul {
+    margin-top: 60px;
+}
+
+.menu ul li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+    text-transform: uppercase;
+    justify-content: left;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 5px;
+    border-style: solid;
+    font-size: small;
+    color: lightsalmon;
+}
+
+.menu h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 45px;
+    border-bottom: solid;
+    border-color: lightcoral;
+}
